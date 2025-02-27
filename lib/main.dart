@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cube/flutter_cube.dart';
+//import 'package:flutter_3d_obj/flutter_3d_obj.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -39,11 +42,11 @@ class _RenderState extends State<Render> with SingleTickerProviderStateMixin {
     _cube = Object(
         scale: Vector3(5.0, 5.0, 5.0),
         backfaceCulling: true,
-        fileName: 'assets/file.obj');
+        fileName: 'assets/cube.obj');
     _c = Object(
         scale: Vector3(5.0, 5.0, 5.0),
         backfaceCulling: true,
-        fileName: 'assets/file.obj');
+        fileName: 'assets/cube.obj');
     _cube!.add(_c!);
 
     scene.world.add(_cube!);
