@@ -52,20 +52,20 @@ class _RenderState extends State<Render> with SingleTickerProviderStateMixin {
     scene.world.add(_cube!);
   }
 
-  @override
-  void initState() {
-    super.initState();
-    _controller =
-        AnimationController(duration: const Duration(seconds: 3), vsync: this)
-          ..addListener(() {
-            if (_cube != null) {
-              _cube!.rotation.y = _controller.value * 360;
-              _cube!.updateTransform();
-              _scene.update();
-            }
-          })
-          ..repeat();
-  }
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   _controller =
+  //       AnimationController(duration: const Duration(seconds: 3), vsync: this)
+  //         ..addListener(() {
+  //           if (_cube != null) {
+  //             _cube!.rotation.y = _controller.value * 360;
+  //             _cube!.updateTransform();
+  //             _scene.update();
+  //           }
+  //         })
+  //         ..repeat();
+  // }
 
   @override
   void dispose() {
