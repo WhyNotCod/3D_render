@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cube/flutter_cube.dart';
+import 'renderss.dart';
 //import 'package:flutter_3d_obj/flutter_3d_obj.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Render(title: '3D Render'),
+      home: Renders(title: '3D Render'),
     );
   }
 }
@@ -89,7 +90,7 @@ class _RenderState extends State<Render> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const Render(),
+                    builder: (context) => const Renders(),
                   ),
                 );
               },

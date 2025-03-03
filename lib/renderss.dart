@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 
-class Render extends StatefulWidget {
-  const Render({super.key, this.title});
+class Renders extends StatefulWidget {
+  const Renders({super.key, this.title});
 
   final String? title;
 
   @override
-  State<Render> createState() => _RenderState();
+  State<Renders> createState() => _RenderState();
 }
 
-class _RenderState extends State<Render> {
+class _RenderState extends State<Renders> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text(widget.title ?? '3D Render Page'),
+        title: Text(widget.title ?? '3D Renders Page'),
       ),
       body: Center(
         child: const Text('Hello'),
