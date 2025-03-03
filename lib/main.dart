@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Renders(title: '3D Render'),
+      home: Render(title: '3D Render'),
     );
   }
 }

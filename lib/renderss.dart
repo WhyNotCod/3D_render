@@ -15,7 +15,7 @@ class _RenderState extends State<Renders> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text(widget.title ?? '3D Renders Page'),
+        title: Text('3D Renders Page'),
       ),
       body: Center(
         child: const Text('Hello'),
