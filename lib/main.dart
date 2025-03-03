@@ -30,7 +30,8 @@ class Render extends StatefulWidget {
   State<Render> createState() => _RenderState();
 }
 
-class _RenderState extends State<Render> with SingleTickerProviderStateMixin {
+class _RenderState extends State<Render> {
+  // with SingleTickerProviderStateMixin {
   late Scene _scene;
   Object? _cube;
   late AnimationController _controller;
